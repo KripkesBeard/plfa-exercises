@@ -40,38 +40,45 @@ infixl 7  _*_
 --    EXERCISES
 -}
 
--- Exercise `seven`
+{- Exercise `seven` -}
 -- Write out `7` in longhand.
 
 seven : ℕ
 seven = suc (suc (suc (suc (suc (suc (suc zero))))))
 
 
--- Exercise `+-example`
+{-E xercise `+-example` -}
 -- Compute `3 + 4`, writing out your reasoning as a chain of equations, using the equations for `+`.
 
 
 
 
--- Exercise `*-example`
+{- Exercise `*-example` -}
 -- Compute `3 * 4`, writing out your reasoning as a chain of equations, using the equations for `*`.
 -- (You do not need to step through the evaluation of `+`.)
 
 
 
--- Exercise `_^_` (recommended) {#power}
+{- Exercise `_^_` -}
 -- Define exponentiation, which is given by the following equations:
 --
 --     m ^ 0        =  1
 --     m ^ (1 + n)  =  m * (m ^ n)
 -- Check that `3 ^ 4` is `81`.
 
--- Exercise `∸-example₁` and `∸-example₂`
+
+
+
+{- Exercise `∸-example₁` and `∸-example₂` -}
 -- Compute `5 ∸ 3` and `3 ∸ 5`, writing out your reasoning as a chain of equations.
 
---Exercise `Bin` (stretch) {#Bin}
---A more efficient representation of natural numbers uses a binary
---rather than a unary system.  We represent a number as a bitstring:
+
+
+
+
+{- Exercise `Bin` -}
+-- more efficient representation of natural numbers uses a binary
+-- rather than a unary system.  We represent a number as a bitstring:
 
 data Bin : Set where
   ⟨⟩ : Bin
@@ -112,3 +119,4 @@ data Bin : Set where
 -- For the former, choose the bitstring to have no leading zeros if it
 -- represents a positive natural, and represent zero by `⟨⟩ O`.
 -- Confirm that these both give the correct answer for zero through four.
+
